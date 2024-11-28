@@ -182,3 +182,98 @@ footer p{
     text-align: center;
     font-size: .8rem;
 }
+
+
+
+
+
+/* Overall container for form */
+.contactus{
+    margin-top: 100px;
+}
+.contact {
+    text-align: center;
+    /* margin-top: 50px; */
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    min-height: 90vh;
+    box-sizing: border-box;
+}
+
+/* Form styling */
+.contact-form {
+    width: 50%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2),
+                -10px -10px 30px rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Label styling */
+.contact-form label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Input and textarea styling */
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #ecf0f3;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2),
+                inset -5px -5px 10px rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.1),
+                inset -3px -3px 8px rgba(255, 255, 255, 0.6);
+}
+
+/* Textarea specific adjustments */
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Button styling */
+.contact-form button {
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: #6c63ff;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2),
+                -5px -5px 15px rgba(255, 255, 255, 0.7);
+}
+
+.contact-form button:hover {
+    background-color: #5754d2;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2),
+                -3px -3px 10px rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .contact-form {
+        width: 90%;
+        padding: 20px;
+    }
+}
