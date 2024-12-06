@@ -84,7 +84,7 @@ h1 img{
 
 
 .projects {
-    margin-bottom: 30px;
+    margin: 40px 0 20px 0;
     text-align: center;
 }
 
@@ -286,7 +286,7 @@ footer p{
         display: none;
     }
     .project-card {
-        height: 20vh;
+        height: 25vh;
         font-size: 1.03rem;
     }
 }
