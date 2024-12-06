@@ -186,19 +186,28 @@ footer p{
     margin-top: 100px;
 }
 .contact {
+    display: flex;
     text-align: center;
     /* margin-top: 50px; */
-    display: flex;
     justify-content: center;
     padding: 30px;
-    min-height: 90vh;
+    min-height: 70vh;
     box-sizing: border-box;
+}
+.about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    font-size: 1.5rem
 }
 
 /* Form styling */
 .contact-form {
     width: 50%;
-    max-width: 600px;
+    min-width: 40vw;
+    max-width: 40vw;
     padding: 30px;
     border-radius: 20px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2),
@@ -267,7 +276,41 @@ footer p{
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .contact-form {
-        width: 90%;
+        min-width: 130%;
         padding: 20px;
+    }
+    .contact-form button{
+        padding: 10px 20px;
+    }
+    .about-me{
+        display: none;
+    }
+    .project-card {
+        height: 20vh;
+        font-size: 1.03rem;
+    }
+}
+/* Responsive design for mid screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contact{
+        min-height: 50vh;
+    }
+    .contact-form {
+        min-width: 90%;
+        padding: 30px;
+        
+    }
+    .contact-form button{
+        padding: 10px 20px;
+    }
+    .about-me{
+        display: none;
+    }
+    .project-card {
+        height: 20vh;
+        padding: 10px;
+        font-size: larger;
+        min-width: calc(50% - 20px);
+        max-width: calc(50% - 20px);
     }
 }
